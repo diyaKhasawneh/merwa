@@ -1,0 +1,119 @@
+.service-new-section {
+    padding: 60px 20px;
+  }
+  
+  .service-new-content {
+    text-align: center;
+  }
+  
+  .service-new-title {
+    color: #3F485E;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-new-description {
+    color: #77838F;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .service-new-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .service-new-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-end-start-radius: 60px;
+  }
+  
+  .service-new-card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .service-new-card:nth-of-type(2) .service-new-card-content,
+  .service-new-card:nth-of-type(4) .service-new-card-content {
+    flex-direction: row-reverse; /* Inverse image and text order for second and fourth cards */
+  }
+  .service-new-card:nth-of-type(3){
+    border-end-end-radius: 60px;
+    border-end-start-radius: 0;
+  }
+  
+  .service-new-card-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .service-new-card:nth-of-type(2) .service-new-card-image,
+  .service-new-card:nth-of-type(4) .service-new-card-image {
+    margin-right: 0;
+    margin-left: 20px; /* Space for inverse cards */
+  }
+  
+  .service-new-card-text {
+    flex: 2;
+  }
+  
+  .service-new-card h2 {
+    color: orange;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-new-card p {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service-new-card-content {
+      flex-direction: column;
+    }
+    
+    .service-new-card-image {
+      display: none; /* Hide image on mobile */
+      margin: 0;
+    }
+    
+    .service-new-card-text {
+      text-align: center;
+    }
+  }
+  
+
+  .descserv,.titleserv {
+text-align: left;
+  }
+
+
+
+  
+  .animated-image {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards, float 5s ease-in-out infinite;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }

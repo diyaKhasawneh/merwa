@@ -1,0 +1,140 @@
+.services {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .services-description {
+    color: #3F485E;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-radius:25px ;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    height: 350px; /* Adjust the height as needed */
+  }
+  
+  .card-image {
+    object-fit: cover;
+    border-radius: 0px !important;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #3F485E 0%, rgba(217, 217, 217, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    color: white;
+  }
+  
+  .card-overlay h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .card-overlay p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .card-overlay .learn-more {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left; 
+    margin-top: 20px;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      height: 200px; /* Adjust the height for mobile */
+    }
+  
+    .card-overlay h1 {
+      font-size: 1.2rem;
+    }
+  
+    .card-overlay p {
+      font-size: 0.9rem;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-fade-in-delay-1 {
+    animation: fade-in 1s ease-in-out 0.1s forwards;
+  }
+  
+  .animated-fade-in-delay-2 {
+    animation: fade-in 1s ease-in-out 0.3s forwards;
+  }
+  
+  .animated-fade-in-delay-3 {
+    animation: fade-in 1s ease-in-out 0.5s forwards;
+  }
+  
+  .animated-fade-in-delay-4 {
+    animation: fade-in 1s ease-in-out 0.7s forwards;
+  }
+
+
+  
+
+  @keyframes moveRightLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Adjust the value to control the movement distance */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .card-right-left {
+    animation: moveRightLeft 5s ease-in-out infinite; /* Adjust the duration as needed */
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .card-image {
+    transition: transform 0.8s ease-in-out; 
+  }
+  
+  .card:hover .card-image {
+    transform: scale(2); 
+  }

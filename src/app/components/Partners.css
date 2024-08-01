@@ -1,0 +1,120 @@
+.partners-section {
+    background: linear-gradient(151.81deg, #3F485E 24.5%, #49536B 53.53%, #535E78 82.55%);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .partners-title {
+    color: orange;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .partners-description {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  
+ 
+  .partner-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card-image {
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-description {
+    color: #3F485E;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-border {
+    width: 240px;
+    height: 11px;
+    border-radius: 50px 50px 0 0;
+    opacity: 0.5;
+    background: #EB6B2A;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .parent{
+display: flex;
+justify-content: space-between;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .partner-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .card-border {
+      width: 100%;
+    }
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 990px) {
+    .partner-card {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .parent{
+       flex-direction: column;
+          }
+          .card-image {
+            width: 20%;
+           
+            border-radius: 10px;
+          }
+
+   
+  }
+  
+
+  .rotate-infinitely {
+    display: inline-block;
+    animation: rotate360 5s linear infinite;
+  }
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

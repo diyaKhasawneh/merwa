@@ -1,0 +1,25 @@
+.top-navbar {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+  
+  .icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-link {
+    color: #3F485E;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-link:hover {
+    background-color: lightgray;
+    border-radius: 50%;
+  }
+  
